@@ -17,23 +17,17 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     
-  
+  console.log("hi from post")
     try {
-      console.log(req.body)
-        const smsBody = {};
-        smsBody.to = "7007870498";
-         smsBody.text = "Rupeek Executive Agent007 has reached your designated location. Kindly verify their identity by providing the OTP 1234 before they enter your place +"/n 
-           "Please read the conditions for the e-KYC process required during the transaction on this link: https://bit.ly/3iQZzIc";
-           
-        await sendSMS(smsBody);
-        res.json({message : "done"});
-
-
+      
+     await sendSMS()
+  
+      
+    } catch (err) {
+      console.log(err)
+      
     }
-    catch (err) {
-      error = "error";
-        res.json({ message: error });
-    }
+   
 
 })
 
