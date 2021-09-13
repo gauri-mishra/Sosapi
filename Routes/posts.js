@@ -19,13 +19,16 @@ router.post('/', async (req, res) => {
     
   console.log("hi from post")
     try {
+      const smsbody = {
       
-     await sendSMS()
-  
+      }
+      smsbody.phone = 7007870498
+     await sendSMS(smsbody)
+      res.json({message : "success"})
       
     } catch (err) {
       console.log(err)
-      
+      res.json({message :"failed"})
     }
    
 
