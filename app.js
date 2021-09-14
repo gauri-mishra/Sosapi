@@ -6,17 +6,13 @@ const app = express()
 const postsRoute = require('./Routes/posts')
 
 app.use(bodyParser.json())
+
 app.use('/sms',postsRoute)
 
 app.get('/', (req, res) => {
     res.send("we are up and running ")
 }
 );
-
-mongoose.connect(process.env.DB_CONNECTION,
-()=>{
-    console.log(" Connected");
-})
 
 app.listen(3000, () => console.log("api server running"))
 

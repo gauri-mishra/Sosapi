@@ -1,12 +1,11 @@
 const express = require('express')
 const router = express.Router()
-const Sos = require('../models/SOS');
 const sendSMS = require('./SMSservice');
 
 router.get('/', async (req, res) => {
    try{
-        const fetched = await Sos.find()
-        res.json(fetched)
+       
+        res.json({message : "Nothing To Fetch"})
    }
    catch(err)
    {
@@ -16,21 +15,19 @@ router.get('/', async (req, res) => {
 );
 
 router.post('/', async (req, res) => {
-    
+  const smsbody = {}  
   console.log("hi from post")
     try {
-      const smsbody = {
-      
-      }
       smsbody.phone = 7007870498
-     await sendSMS(smsbody)
-      res.json({message : "success"})
-      
+      const result =   await sendSMS(smsbody)
+      res.json({message : result.message})
+      console.log(result.message)
+       
     } catch (err) {
       console.log(err)
       res.json({message :"failed"})
+     
     }
-   
 
 })
 
