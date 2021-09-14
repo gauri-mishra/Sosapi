@@ -17,12 +17,11 @@ const sendSMS = async (options) => {
         }).toString();
         const url = process.env.BASE_URL + params;
         const apiResponse = await axios.get(url);
-        
         console.log(apiResponse.data)
        return apiResponse.data
     } catch (err) {
         console.log(err)
-        return err
+       throw Error(err)
     }
 };
 

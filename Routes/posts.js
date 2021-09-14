@@ -19,9 +19,12 @@ router.post('/', async (req, res) => {
   console.log("hi from post")
     try {
       smsbody.phone = 7007870498
-      const result =   await sendSMS(smsbody)
-      res.json({message : result.message})
-      console.log(result.message)
+      const result =   await (sendSMS(smsbody));
+      if(result)
+      {
+      res.json({message : "done"})
+      
+      }
        
     } catch (err) {
       console.log(err)
@@ -29,7 +32,7 @@ router.post('/', async (req, res) => {
      
     }
 
-})
+} )
 
 module.exports = router
 
