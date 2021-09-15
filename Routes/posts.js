@@ -7,8 +7,8 @@ router.post('/', async (req, res) => {
 
   try {
     const reqcity = req.query.city
-    smsbody.lmName = req.query.name
-    smsbody.lmPhoneNo = req.query.phoneNo
+    smsbody.Name = req.query.name
+    smsbody.PhoneNo = req.query.phoneNo
     smsbody.lat = req.query.lat
     smsbody.lon = req.query.lon
     smsbody.empId = req.query.empId
