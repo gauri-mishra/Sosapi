@@ -6,13 +6,16 @@ router.post('/', async (req, res) => {
   const smsbody = {}
 
   try {
-    const reqcity = req.query.city
-    smsbody.Name = req.query.name
-    smsbody.PhoneNo = req.query.phoneNo
-    smsbody.lat = req.query.lat
-    smsbody.lon = req.query.lon
-    smsbody.empId = req.query.empId
-    smsbody.phone = arr.filter(item => item.city == reqcity)[0].phoneNo;
+
+    smsbody.Name = req.body.name
+    smsbody.PhoneNo = req.body.phoneNo
+    smsbody.empId = req.body.empId
+    smsbody.city = req.body.city
+    smsbody.option = req.body.option
+    smsbody.lat = req.body.latitude
+    smsbody.lon = req.body.longitude 
+    smsbody.phone = arr.filter(item => item.city == smsbody.city.toString())[0].phoneNo;
+    console.log(smsbody)
     const result = await (sendSMS(smsbody));
     if (result) {
       res.json({
@@ -20,11 +23,12 @@ router.post('/', async (req, res) => {
         message: result.message,
         phoneNo: smsbody.phone
       })
-
+      console.log("Success")
     }
 
   } catch (err) {
     console.log(err)
+    console.log("Failure")
     res.status(400).json({ message: "Failed to send alert " })
 
   }
