@@ -11,7 +11,7 @@ router.post('/', async (req, res) => {
     smsbody.lmPhoneNo = req.query.phoneNo
     smsbody.lat = req.query.lat
     smsbody.lon = req.query.lon
-
+    smsbody.empId = req.query.empId
     smsbody.phone = arr.filter(item => item.city == reqcity)[0].phoneNo;
     const result = await (sendSMS(smsbody));
     if (result) {
