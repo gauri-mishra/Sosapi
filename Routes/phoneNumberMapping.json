@@ -1,0 +1,126 @@
+[
+  { "city": "Dev", "phoneNo": [7007870498, 9793666649] },
+  {
+    "city": "Ahmedabad",
+    "phoneNo": [9687019505, 8007630300, 8447427425]
+  },
+  {
+    "city": "Bangalore",
+    "phoneNo": []
+  },
+
+  {
+    "city": "Bhopal",
+    "phoneNo": [8109774349, 8805316305, 8447427425]
+  },
+
+  {
+    "city": "Chandigarh",
+    "phoneNo": [8837788335, 8287872426, 8447427425]
+  },
+
+  {
+    "city": "Chennai",
+    "phoneNo": []
+  },
+
+  {
+    "city": "Coimbatore",
+    "phoneNo": []
+  },
+
+  {
+    "city": "Delhi",
+    "phoneNo": [7982385124, 8287872426, 8447427425]
+  },
+  {
+    "city": "Faridabad",
+    "phoneNo": [9311067800, 8287872426, 8447427425]
+  },
+  {
+    "city": "Ghaziabad",
+    "phoneNo": [9718008706, 8287872426, 8447427425]
+  },
+  {
+    "city": "Gurgaon",
+    "phoneNo": [8920084666, 8287872426, 8447427425]
+  },
+  {
+    "city": "Hyderabad",
+    "phoneNo": []
+  },
+  {
+    "city": "Indore",
+    "phoneNo": [9755539490, 8805316305, 8447427425]
+  },
+  {
+    "city": "Jaipur",
+    "phoneNo": [6350070127, 8007630300, 8447427425]
+  },
+  {
+    "city": "Jalandhar",
+    "phoneNo": [9888070889, 8287872426, 8447427425]
+  },
+  {
+    "city": "Karimnagar",
+    "phoneNo": []
+  },
+
+  {
+    "city": "Kolkata",
+    "phoneNo": [9674013501, 8447427425]
+  },
+
+  {
+    "city": "Lucknow",
+    "phoneNo": [8802263247, 8287872426, 8447427425]
+  },
+
+  {
+    "city": "Ludhiana",
+    "phoneNo": [9781993470, 8287872426, 8447427425]
+  },
+
+  {
+    "city": "Mumbai",
+    "phoneNo": [9769812246, 8805316305, 8447427425]
+  },
+
+  {
+    "city": "Mysore",
+    "phoneNo": []
+  },
+  {
+    "city": "Noida",
+    "phoneNo": [9068256867, 8287872426, 8447427425]
+  },
+  {
+    "city": "Pune",
+    "phoneNo": [9340380067, 8805316305, 8447427425]
+  },
+
+  {
+    "city": "Rajkot",
+    "phoneNo": [9687019505, 8007630300, 8447427425]
+  },
+
+  {
+    "city": "Surat",
+    "phoneNo": [8460339557, 8007630300, 8447427425]
+  },
+
+  {
+    "city": "Vadodara",
+    "phoneNo": [9173813426, 8007630300, 8447427425]
+  },
+
+  {
+    "city": "Vijayawada",
+    "phoneNo": []
+  },
+
+  {
+    "city": "Visakhapatnam",
+    "phoneNo": []
+  }
+]
